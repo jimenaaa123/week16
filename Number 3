@@ -1,0 +1,14 @@
+def bubble_sort(unordered_list):
+  iteration_number = len(unordered_list)-1#length of the list -1
+  for i in range(iteration_number,0,-1):
+      for j in range(i):
+          if unordered_list[j] > unordered_list[j+1]:
+              temp = unordered_list[j]
+              unordered_list[j] = unordered_list[j+1]
+              unordered_list[j+1] = temp
+
+# sample_list=[2,4,3,1]
+# print(bubble_sort(sample_list))
+numbers = [1,4,2,7,3]
+bubble_sort(numbers)
+print("Sorted list:", numbers)
